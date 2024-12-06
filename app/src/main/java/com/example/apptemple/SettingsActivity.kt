@@ -19,7 +19,7 @@ class SettingsActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         goBack()
-        goExit()
+//        goExit()
         goTelegram()
         toProfileSettings()
         toQuestionActivity()
@@ -38,12 +38,12 @@ class SettingsActivity : AppCompatActivity() {
         }
     }
 
-    //При нажатии кнопки "Выйти из аккаунта" перезапускаем до активити входа
-    private fun goExit() {
-        binding.exitButton.setOnClickListener {
-            startActivity(Intent(this, EnterActivity::class.java))
-        }
-    }
+//    //При нажатии кнопки "Выйти из аккаунта" перезапускаем до активити входа
+//    private fun goExit() {
+//        binding.exitButton.setOnClickListener {
+//            startActivity(Intent(this, EnterActivity::class.java))
+//        }
+//    }
 
     // При нажатии на кнопку осуществляется переход на активити "Вопрос-ответ"
     private fun toQuestionActivity() {

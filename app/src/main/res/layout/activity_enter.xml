@@ -63,11 +63,11 @@
             android:padding="15dp"/>
 
         <CheckBox
-            android:fontFamily="@font/montserrat_regular"
             android:id="@+id/passwordCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
             android:text="Запомнить меня" />
 
         <Button
@@ -101,17 +101,17 @@
             android:textSize="18dp" />
 
         <Button
-            android:fontFamily="@font/montserrat_regular"
             android:id="@+id/enterRegisterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/lightBlue"
-            android:textColor="@color/lightBlack"
-            android:text="Зарегистрироваться"
-            android:textSize="19dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
             android:paddingHorizontal="25dp"
-            android:paddingVertical="10dp" />
+            android:paddingVertical="10dp"
+            android:text="Зарегистрироваться"
+            android:textColor="@color/colorPrimaryVariant"
+            android:textSize="19dp" />
 
     </LinearLayout>
 </LinearLayout>

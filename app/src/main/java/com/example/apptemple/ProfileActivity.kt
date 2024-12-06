@@ -1,5 +1,6 @@
 package com.example.apptemple
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,12 +17,13 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        goBack()
+        goExit()
     }
 
-    private fun goBack() {
-        binding.backButton.setOnClickListener {
-            finish()
+    //При нажатии кнопки "Выйти из аккаунта" перезапускаем до активити входа
+    private fun goExit() {
+        binding.exitButtonSET.setOnClickListener {
+            startActivity(Intent(this, EnterActivity::class.java))
         }
     }
 }
