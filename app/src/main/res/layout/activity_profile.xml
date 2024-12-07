@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -39,12 +38,64 @@
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
+        android:id="@+id/profileInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blur_rectangle"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Логин"
+            android:textAlignment="textStart"
+            android:paddingStart="15dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blur_rectangle"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Имя"
+            android:textAlignment="textStart"
+            android:paddingStart="15dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blur_rectangle"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Фамилия"
+            android:textAlignment="textStart"
+            android:paddingStart="15dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/blur_rectangle"
+            android:text="Отчество"
+            android:textAlignment="textStart"
+            android:paddingStart="15dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/profileSetting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="15dp">
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
 
         <ImageView
             android:layout_width="40dp"
@@ -61,8 +112,6 @@
             android:textSize="25dp" />
 
     </LinearLayout>
-
-
 
     <LinearLayout
         android:id="@+id/exitButtonSET"
@@ -85,7 +134,6 @@
             android:textSize="25dp"
             android:fontFamily="@font/montserrat_regular"
             android:textAlignment="textStart"/>
-
     </LinearLayout>
 
 </LinearLayout>
