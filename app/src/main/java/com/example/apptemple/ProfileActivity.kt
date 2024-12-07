@@ -16,8 +16,13 @@ class ProfileActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        goBack()
         goExit()
+    }
+    private fun goBack(){
+        binding.backButton.setOnClickListener{
+            finish()
+        }
     }
 
     //При нажатии кнопки "Выйти из аккаунта" перезапускаем до активити входа

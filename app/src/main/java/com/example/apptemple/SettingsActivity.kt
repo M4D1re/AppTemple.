@@ -19,6 +19,7 @@ class SettingsActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         goBack()
+        // перенес в ProfileActivity
 //        goExit()
         goTelegram()
         toProfileSettings()
@@ -38,6 +39,7 @@ class SettingsActivity : AppCompatActivity() {
         }
     }
 
+        // перенес в ProfileActivity
 //    //При нажатии кнопки "Выйти из аккаунта" перезапускаем до активити входа
 //    private fun goExit() {
 //        binding.exitButton.setOnClickListener {
