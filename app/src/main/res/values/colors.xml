@@ -19,6 +19,6 @@
     <color name="primaryColor">#FF000000</color>
     <color name="primaryColorTopScreen">#00FFFFFF</color>
     <color name="ColorForTransparentBackground">#00FFFFFF</color>
-
+    <color name="SystemStileColor">#a65363"</color>
 
 </resources>
