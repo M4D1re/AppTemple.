@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <!-- Профиль пользователя (увеличили размер картинки) -->
+    <!-- Укажите путь к изображению -->
+
+    <!-- Имя пользователя (username) справа от изображения -->
+
+    <!-- Фамилия пользователя -->
+
+    <!-- Номер телефона -->
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/account_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="User name"
+        android:textSize="18dp"
+        android:textColor="@color/gray"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/surnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:text="User surname"
+        android:textColor="@color/gray"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@id/usernameText"
+        app:layout_constraintTop_toBottomOf="@id/usernameText" />
+
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+7 (000)-000-00-00"
+        android:textSize="18dp"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@id/usernameText"
+        app:layout_constraintTop_toBottomOf="@id/surnameText"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"/>
+
+    <!-- Ссылка на профиль / описание (например, "О себе") -->
+
+    <!-- Настройки и кнопки (RecyclerView) -->
+    <TextView
+        android:id="@+id/githubLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:text="username"
+        android:textColor="@color/colorPrimaryVariant"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@id/usernameText"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settingsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/githubLink"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!-- Кнопка настроек в правом верхнем углу -->
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />  <!-- Замените на свой ресурс иконки -->
+    android:contentDescription="@string/settings"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="?android:attr/selectableItemBackgroundBorderless" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
